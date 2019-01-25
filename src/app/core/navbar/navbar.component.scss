@@ -1,0 +1,15 @@
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+
+  a{
+    margin: 20px;
+    background-color: yellow;
+    border-radius: 20px;
+    height: 50px;
+    width: 100px;
+  }
+}
