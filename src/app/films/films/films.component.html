@@ -1,3 +1,8 @@
-<p>
-  films works!
-</p>
+<div *ngIf="!this.films">
+  <div class="center" >
+    <div class="loader" ></div>
+  </div>
+</div>
+<div class="container" *ngIf="this.films" >
+    <app-film *ngFor="let Film of this.films.results" [film]="Film" ></app-film>
+</div>

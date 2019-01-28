@@ -1,6 +1,7 @@
 import {Film} from './Film';
 
-export class filmsMetadata {
+
+export class filmsmetadata {
   count: number;
   next: string;
   previoud: string;

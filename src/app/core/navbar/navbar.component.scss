@@ -4,12 +4,37 @@ nav{
   justify-content: space-between;
   align-items: center;
   justify-items: center;
+  background-color: black;
+  padding: 20px;
+  margin: 0;
 
-  a{
-    margin: 20px;
-    background-color: yellow;
-    border-radius: 20px;
-    height: 50px;
-    width: 100px;
+  button{
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    border-bottom: 5px solid transparent;
+  }
+  img{
+    background-color: white;
+  }
+  .films{
+    background-color: #373727;
+    color: #dcdb4c;
+  }
+  .films:hover{
+    border-bottom-color: #dcdb4c;
+  }
+  .databank{
+    background-color: #35292b;
+    color: #f12d5d;
+  }
+  .databank:hover{
+      border-bottom-color: #9e4f60;
   }
 }

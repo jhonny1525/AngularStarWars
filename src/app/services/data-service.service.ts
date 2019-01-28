@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Observable} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
-import {filmsMetadata} from '../models/films_models/films_metadata';
+import {filmsMetadata} from '../models/films_models/filmsmetadata';
 import {Film} from '../models/films_models/Film';
 
 @Injectable({
@@ -14,7 +14,7 @@ export class DataServiceService {
   constructor(private http:HttpClient) { }
 
 
-  //films
+  // films
   getFilms(): Observable<filmsMetadata>{
     return this.http.get<filmsMetadata>(this.BASE_URL+'films/'+this.BASE_FORMAT);
   }
@@ -22,7 +22,7 @@ export class DataServiceService {
     return this.http.get<Film>(this.BASE_URL+`films/${film_index}/`+this.BASE_FORMAT)
   }
 
-  //people
+  // people
 
 
 }
